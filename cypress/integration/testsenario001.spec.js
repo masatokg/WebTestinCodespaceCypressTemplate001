@@ -9,12 +9,12 @@ describe('テスト大項目01', () => {
         it('テスト小項目02:指定idの要素があるか', () => {
             // https://docs.cypress.io/api/commands/get
             // id要素が存在するか
-            cy.get('id=top_message').should('exist');
+            cy.get('#top_message').should('exist');
         })
         it('テスト小項目03:指定id top_messageの内容が「トップページです」なのか', () => {
             // https://docs.cypress.io/api/commands/get
             // id要素が存在するか
-            cy.get('id=top_message').equal('トップページです');
+            cy.get('#top_message').should('have.text','トップページです');
         })
     })
 })
