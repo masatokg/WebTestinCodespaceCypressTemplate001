@@ -1,7 +1,7 @@
 describe('テスト大項目01', () => {
     context('テスト中項目01', () =>{
         cy.viewport(1440, 798);
-        // churadataのHPにアクセスする
+        // top indexにアクセスする
         cy.visit('http://localhost:3333');
 
         it('テスト小項目01:指定idの要素があるか', () => {
